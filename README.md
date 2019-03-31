@@ -1,5 +1,7 @@
 # iwakulab-nuxt
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e735ac2e-ff4b-425b-bb15-74823658b91a/deploy-status)](https://app.netlify.com/sites/zealous-mirzakhani-702e57/deploys)
+
 > Nuxt.js + Netlify CMS project
 
 ## Build Setup
