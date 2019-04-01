@@ -8,16 +8,16 @@ module.exports = {
   */
   head: {
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
-    title: "My Website",
+    title: "iwakuLab",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Welcome to my website."
+        content: "Welcome to my iwakuLab."
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
