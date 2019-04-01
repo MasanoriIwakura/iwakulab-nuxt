@@ -1,5 +1,6 @@
 <template>
   <div>
+    <navbar/>
     <nav>
       <ul>
         <li>
@@ -63,3 +64,13 @@ html {
   background-color: #35495e;
 }
 </style>
+
+<script>
+import Navbar from '~/components/Navbar.vue'
+
+export default {
+  components: {
+    Navbar
+  }
+}
+</script>
