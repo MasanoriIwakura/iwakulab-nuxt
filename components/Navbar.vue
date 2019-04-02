@@ -1,6 +1,8 @@
 <template>
-  <v-toolbar color="blue" dark>
-    <v-toolbar-title>IwakuLab</v-toolbar-title>
+  <v-toolbar color="black" dark>
+    <v-toolbar-title>
+      <img src="/img/iwakulab-logo.svg" width="64" height="64">
+    </v-toolbar-title>
 
     <v-divider class="mx-3" inset vertical></v-divider>
 
