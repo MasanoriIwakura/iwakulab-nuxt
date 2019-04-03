@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <h1>Technology Blog</h1>
-    <v-app>
+  <v-app>
+    <v-container>
+      <h1>Technology Blog</h1>
       <v-content>
-        <v-container>Hello world</v-container>
+        <v-container>個人的に気になった技術を中心に投稿します</v-container>
       </v-content>
-    </v-app>
-  </div>
+    </v-container>
+  </v-app>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <h2>Welcome</h2>
-  </div>
+  <v-container>
+    <h1>Welcome to Iwakulabo !!!</h1>
+  </v-container>
 </template>
 
 <script>

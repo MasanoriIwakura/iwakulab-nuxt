@@ -14,11 +14,11 @@
 
       <v-divider vertical></v-divider>
 
-      <v-btn flat>Hobby Blog</v-btn>
+      <v-btn flat to="/hobby">Hobby Blog</v-btn>
 
       <v-divider vertical></v-divider>
 
-      <v-btn flat>Contact</v-btn>
+      <v-btn flat to="/contact">Contact</v-btn>
 
       <v-divider vertical></v-divider>
     </v-toolbar-items>
