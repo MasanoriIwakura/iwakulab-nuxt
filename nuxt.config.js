@@ -46,5 +46,8 @@ module.exports = {
         });
       }
     }
-  }
+  },
+  css: [
+    { src: 'font-awesome/css/font-awesome.min.css', lang: 'css' }
+  ]
 };

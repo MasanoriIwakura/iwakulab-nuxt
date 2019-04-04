@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar color="black" dark>
+  <v-toolbar class="grey darken-4" dark>
     <v-toolbar-title>
       <img src="/img/iwakulab-logo.svg" width="64" height="64">
     </v-toolbar-title>

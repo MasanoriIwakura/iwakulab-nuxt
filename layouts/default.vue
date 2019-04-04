@@ -2,6 +2,7 @@
   <div>
     <navbar/>
     <nuxt/>
+    <my-footer/>
   </div>
 </template>
 
@@ -57,10 +58,12 @@ html {
 
 <script>
 import Navbar from '~/components/Navbar.vue'
+import MyFooter from '~/components/Footer.vue'
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    MyFooter
   }
 }
 </script>
