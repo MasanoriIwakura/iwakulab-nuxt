@@ -24,6 +24,8 @@
     </v-toolbar-items>
 
     <v-spacer></v-spacer>
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-btn flat icon href="https://github.com/MasanoriIwakura/iwakulab-nuxt" target="_blank">
+      <v-icon medium>fa-github</v-icon>
+    </v-btn>
   </v-toolbar>
 </template>
