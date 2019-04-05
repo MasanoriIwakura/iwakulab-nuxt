@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <nuxtdown-body class="body" :body="page.body"/>
+    <v-container>
+      <nuxtdown-body class="body" :body="page.body"/>
+    </v-container>
   </v-app>
 </template>
 

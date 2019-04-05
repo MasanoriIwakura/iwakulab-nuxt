@@ -1,10 +1,16 @@
-## Name
+---
+title: Profile
+description: MasanoriIwakura's profile
+---
+
+# Name
 
 Masanori Iwakura [(GitHub Link)](https://github.com/MasanoriIwakura)
 
 ![GitHub icon](https://avatars1.githubusercontent.com/u/28638961?s=460&v=4)
 
-## Skills
+---
+# Skills
 
 Level：5段階評価(⭐)
 
@@ -19,9 +25,10 @@ Level：5段階評価(⭐)
 |JavaScript|⭐⭐|
 |TypeScript|⭐|
 
-## Frameworks
+---
+# Frameworks
 
-### C#, VB.NET
+## C#, VB.NET
 
 |Name|Version|
 |:--|:--|
@@ -30,7 +37,7 @@ Level：5段階評価(⭐)
 |Seasar .NET|2|
 |Entity Framework Core|-|
 
-### Python
+## Python
 
 |Name|Version|
 |:--|:--|
@@ -39,7 +46,7 @@ Level：5段階評価(⭐)
 
 ※Pythonは触った程度
 
-### Java
+## Java
 
 |Name|Version|
 |:--|:--|
@@ -47,14 +54,15 @@ Level：5段階評価(⭐)
 |Spring Framework|5|
 |Mybatis|3|
 
-### JavaScript
+## JavaScript
 
 |Name|Version|
 |:--|:--|
 |Vue|v1, v2|
 |Nuxt|2.0.0|
 
-## Others
+---
+# Others
 
 - Docker (少し業務で触って現在も勉強中)
 - Firebase (活用しています)
