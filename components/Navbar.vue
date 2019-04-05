@@ -10,6 +10,9 @@
       <v-btn flat to="/">Home</v-btn>
 
       <v-divider vertical></v-divider>
+      <v-btn flat to="/profile">Profile</v-btn>
+
+      <v-divider vertical></v-divider>
       <v-btn flat to="/blog">Tech Blog</v-btn>
 
       <v-divider vertical></v-divider>
