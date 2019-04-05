@@ -1,6 +1,6 @@
 <template>
   <page-common v-bind:head="page.title">
-    <nuxtdown-body class="body" :body="page.body"/>
+    <nuxtdown-body class="markdown-body" :body="page.body"/>
   </page-common>
 </template>
 
