@@ -6,8 +6,21 @@
   </v-app>
 </template>
 
+<template>
+  <page-common head="Profile">
+    <v-container class="markdown-body">
+      <nuxtdown-body class="body" :body="page.body"/>
+    </v-container>
+  </page-common>
+</template>
+
 <script>
+import PageCommon from '~/components/PageCommon.vue'
+
 export default {
+  components: {
+    PageCommon
+  },
   head: function() {
     return {
       title: `${this.page.title}`,

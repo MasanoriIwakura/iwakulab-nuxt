@@ -1,10 +1,15 @@
 <template>
-  <v-app>
-    <v-container>
-      <h1>Technology Blog</h1>
-      <v-content>
-        <v-container>個人的に気になった技術を中心に投稿します</v-container>
-      </v-content>
-    </v-container>
-  </v-app>
+  <page-common head="Technology Blog">
+    <div>個人的に気になった技術を中心に投稿します</div>
+  </page-common>
 </template>
+
+<script>
+import PageCommon from '~/components/PageCommon.vue'
+
+export default {
+  components: {
+    PageCommon
+  }
+};
+</script>
