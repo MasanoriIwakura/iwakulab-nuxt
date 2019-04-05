@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-container>
+    <v-container class="markdown-body">
       <nuxtdown-body class="body" :body="page.body"/>
     </v-container>
   </v-app>

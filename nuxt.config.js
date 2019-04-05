@@ -48,6 +48,7 @@ module.exports = {
     }
   },
   css: [
-    { src: 'font-awesome/css/font-awesome.min.css', lang: 'css' }
+    'font-awesome/css/font-awesome.min.css',
+    'github-markdown-css/github-markdown.css'
   ]
 };
