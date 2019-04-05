@@ -1,12 +1,4 @@
 <template>
-  <v-app>
-    <v-container class="markdown-body">
-      <nuxtdown-body class="body" :body="page.body"/>
-    </v-container>
-  </v-app>
-</template>
-
-<template>
   <page-common head="Profile">
     <v-container class="markdown-body">
       <nuxtdown-body class="body" :body="page.body"/>

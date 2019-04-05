@@ -1,11 +1,16 @@
 <template>
-  <div>
+  <page-common v-bind:head="page.title">
     <nuxtdown-body class="body" :body="page.body"/>
-  </div>
+  </page-common>
 </template>
 
 <script>
+import PageCommon from '~/components/PageCommon.vue'
+
 export default {
+  components: {
+    PageCommon
+  },
   head: function() {
     return {
       title: `${this.page.title}`,
