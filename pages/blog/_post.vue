@@ -1,6 +1,10 @@
 <template>
-  <page-common v-bind:head="page.title">
-    <nuxtdown-body class="markdown-body" :body="page.body"/>
+  <page-common v-bind:head="post.title">
+    <v-img :src="post.image" max-height="300" max-width="550"/>
+    <v-container>
+      <h2>{{ post.description }}</h2>
+      <nuxtdown-body class="markdown-body" :body="post.body"/>
+    </v-container>
   </page-common>
 </template>
 
@@ -13,19 +17,19 @@ export default {
   },
   head: function() {
     return {
-      title: `${this.page.title}`,
+      title: `${this.post.title}`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: this.page.description
+          content: this.post.description
         }
       ]
     };
   },
   asyncData: async ({ app, route, payload }) => {
     return {
-      page: (await app.$content("/blog").get(route.path)) || payload
+      post: (await app.$content("/blog").get(route.path)) || payload
     };
   }
 };

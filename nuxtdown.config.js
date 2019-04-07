@@ -22,7 +22,8 @@ module.exports = {
       {
         page: "/blog/_post",
         permalink: "/blog/:year-:month-:day-:slug",
-        isPost: true
+        isPost: true,
+        toc: 1
       }
     ],
     [
