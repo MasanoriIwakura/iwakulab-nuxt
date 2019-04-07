@@ -9,7 +9,7 @@
         <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
       </v-flex>
       <v-flex xs6>
-        <v-textarea label="Message" required></v-textarea>
+        <v-textarea v-model="message" :rules="messageRules" label="Message" required></v-textarea>
       </v-flex>
       <v-btn large>Send</v-btn>
     </v-form>
@@ -34,6 +34,11 @@ export default {
     emailRules: [
       v => !!v || "E-mail is required",
       v => /.+@.+/.test(v) || "E-mail must be valid"
+    ],
+    message: "",
+    messageRules: [
+      v => !!v || "Message is required",
+      v => v.length <= 100 || "Message must be less than 100 characters"
     ]
   })
 };
