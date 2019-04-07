@@ -57,7 +57,7 @@ export default {
   methods: {
     send(e) {
       if (!this.name || !this.email || !this.message) {
-        alert();
+        alert("全ての項目を入力してください。");
         return;
       }
       const form = e.target;
@@ -65,7 +65,10 @@ export default {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": form.getAttribute("name")
+          "form-name": form.getAttribute("name"),
+          "name": this.name,
+          "email": this.email,
+          "message": this.message
         })
       })
         .then(() => this.$router.push({ path: form.getAttribute("action") }))
