@@ -18,6 +18,13 @@
   </page-common>
 </template>
 
+<style scoped>
+a {
+  color: black;
+}
+</style>
+
+
 <script>
 import PageCommon from "~/components/PageCommon.vue";
 

@@ -3,10 +3,44 @@
     <v-img :src="post.image" max-height="300" max-width="550"/>
     <v-container>
       <h2>{{ post.description }}</h2>
+      <div v-if="post.toc">
+        <h1 style="margin-top: 1em;">目次</h1>
+        <section style="margin-bottom: 2em;">
+          <ol>
+            <li v-for="toc in post.toc.items" :key="toc.title">
+              <a :href="toc.link">
+                <b>{{ toc.title }}</b>
+              </a>
+            </li>
+          </ol>
+        </section>
+      </div>
       <nuxtdown-body class="markdown-body" :body="post.body"/>
     </v-container>
   </page-common>
 </template>
+
+<style scoped>
+ul, ol {
+  padding: 0;
+  position: relative;
+}
+
+ul li, ol li {
+  color: gray;
+  border-left: solid 6px gray;
+  background: lightgray;
+  margin-bottom: 3px;
+   line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;
+}
+
+a {
+  color: black;
+}
+</style>
+
 
 <script>
 import PageCommon from '~/components/PageCommon.vue'
