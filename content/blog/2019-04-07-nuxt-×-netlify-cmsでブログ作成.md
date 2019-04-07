@@ -2,6 +2,7 @@
 title: Nuxt × Netlify CMSでブログ作成
 description: Create Blog using Nuxt.js and Netlify CMS
 date: '2019-04-07T23:12:05+09:00'
+image: /images/uploads/nuxt-logo.png
 ---
 # はじめに
 
