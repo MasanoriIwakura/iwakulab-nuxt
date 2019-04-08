@@ -17,6 +17,7 @@ collections:
       - {label: Description, name: description, widget: text, required: true}
       - {label: Publish date, name: date, widget: "datetime"}
       - {label: Main Image, name: image, widget: image}
+      - {label: Tags, name: tags, widget: "list"}
       - {label: Content, name: body, widget: "markdown"}
   - label: "Pages"
     name: "pages"
