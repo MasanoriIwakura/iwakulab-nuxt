@@ -10,7 +10,7 @@
           <nuxt-link :to="post.permalink">
             <v-card-title class="headline">{{ post.title }}</v-card-title>
           </nuxt-link>
-          <v-img :src="post.image" aspect-ratio="2.75" max-height="200" max-width="450"/>
+          <v-img :src="post.image" height="200" width="200"/>
           <v-card-text>{{ post.description }}</v-card-text>
         </v-card>
       </v-timeline-item>

@@ -1,6 +1,6 @@
 <template>
   <page-common v-bind:head="post.title">
-    <v-img :src="post.image" max-height="300" max-width="550"/>
+    <v-img :src="post.image" height="400" width="400"/>
     <v-container>
       <h2>{{ post.description }}</h2>
       <div v-if="post.toc">
@@ -16,6 +16,11 @@
         </section>
       </div>
       <nuxtdown-body class="markdown-body" :body="post.body"/>
+      <hr>
+      <h1>[Tags]</h1>
+      <div v-for="tag in post.tags" :key="tag">
+        <kbd>{{tag}}</kbd>
+      </div>
     </v-container>
   </page-common>
 </template>
@@ -40,7 +45,6 @@ a {
   color: black;
 }
 </style>
-
 
 <script>
 import PageCommon from '~/components/PageCommon.vue'
