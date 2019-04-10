@@ -10,7 +10,7 @@
           <nuxt-link :to="post.permalink">
             <v-card-title class="headline">{{ post.title }}</v-card-title>
           </nuxt-link>
-          <v-img :src="post.image" height="200" width="200"/>
+          <v-img :src="post.image"/>
           <v-card-text>{{ post.description }}</v-card-text>
         </v-card>
       </v-timeline-item>
@@ -22,8 +22,13 @@
 a {
   color: black;
 }
-</style>
 
+.v-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+</style>
 
 <script>
 import PageCommon from "~/components/PageCommon.vue";

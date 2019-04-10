@@ -1,6 +1,6 @@
 <template>
   <page-common v-bind:head="post.title">
-    <v-img :src="post.image" height="400" width="400"/>
+    <v-img :src="post.image"/>
     <v-container>
       <h2>{{ post.description }}</h2>
       <div v-if="post.toc">
@@ -43,6 +43,12 @@ ul li, ol li {
 
 a {
   color: black;
+}
+
+.v-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 </style>
 
