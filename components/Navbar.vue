@@ -7,22 +7,7 @@
     <v-divider class="mx-3" inset vertical></v-divider>
 
     <v-toolbar-items>
-      <v-btn flat to="/">Home</v-btn>
-
-      <v-divider vertical></v-divider>
-      <v-btn flat to="/profile">Profile</v-btn>
-
-      <v-divider vertical></v-divider>
-      <v-btn flat to="/blog">Tech Blog</v-btn>
-
-      <v-divider vertical></v-divider>
-
-      <v-btn flat to="/hobby">Hobby Blog</v-btn>
-
-      <v-divider vertical></v-divider>
-
-      <v-btn flat to="/contact">Contact</v-btn>
-
+      <v-btn flat v-for="item in menu" :key="item.title" :to="item.link">{{ item.title }}</v-btn>
       <v-divider vertical></v-divider>
     </v-toolbar-items>
 
@@ -32,3 +17,19 @@
     </v-btn>
   </v-toolbar>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      menu: [
+        { title: 'Home', link: '/' },
+        { title: 'Profile', link: '/profile' },
+        { title: 'Tech Blog', link: '/blog' },
+        { title: 'Hobby Blog', link: '/hobby' },
+        { title: 'Contact', link: '/contact' }
+      ]
+    }
+  }
+}
+</script>
