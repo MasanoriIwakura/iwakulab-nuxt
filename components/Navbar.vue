@@ -20,8 +20,8 @@
       </v-btn>
     </v-toolbar>
     <div class="hidden-md-and-up">
-      <v-expansion-panel class="grey darken-4" dark>
-        <v-expansion-panel-content v-model="show">
+      <v-expansion-panel class="grey darken-4" v-model="show" dark>
+        <v-expansion-panel-content>
           <div slot="header">
             <router-link to="/">
               <img src="/img/iwakulab-logo.svg" width="32" height="32">
@@ -46,12 +46,13 @@ export default {
         { title: 'Hobby Blog', link: '/hobby' },
         { title: 'Contact', link: '/contact' }
       ],
-      show: false
+      show: 1 // default:非表示
     }
   },
   methods: {
     closeMenu () {
-      this.show = false
+      // 非表示
+      this.show = 1
     }
   }
 }
