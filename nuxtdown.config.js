@@ -25,6 +25,14 @@ module.exports = {
         isPost: true,
         toc: 1
       }
+    ],
+    [
+      "profile",
+      {
+        page: "profile/_profile",
+        permalink: "/profile",
+        isPost: false
+      }
     ]
   ]
 };

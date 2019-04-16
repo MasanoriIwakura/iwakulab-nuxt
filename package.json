@@ -18,8 +18,8 @@
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/vuetify": "^0.5.5",
     "font-awesome": "^4.7.0",
-    "nuxt": "^2.6.2",
-    "nuxtent": "^1.4.1"
+    "nuxt": "~2.2.0",
+    "nuxtdown": "^2.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
