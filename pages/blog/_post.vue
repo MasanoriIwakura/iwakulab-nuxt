@@ -15,7 +15,7 @@
           </ol>
         </section>
       </div>
-      <nuxtdown-body class="markdown-body" :body="post.body"/>
+      <nuxtent-body class="markdown-body" :body="post.body"/>
       <hr>
       <h1>[Tags]</h1>
       <div v-for="tag in post.tags" :key="tag">
