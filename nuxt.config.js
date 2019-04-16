@@ -1,6 +1,6 @@
 module.exports = {
   modules: [
-    "nuxtent",
+    "nuxtdown",
     "@nuxtjs/vuetify"
   ],
   env: {
