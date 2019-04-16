@@ -1,11 +1,18 @@
 <template>
-  <div>
-    <nuxtdown-body class="body" :body="page.body"/>
-  </div>
+  <page-common :head="page.title">
+    <v-container class="markdown-body">
+      <nuxtent-body class="body" :body="page.body"/>
+    </v-container>
+  </page-common>
 </template>
 
 <script>
+import PageCommon from '~/components/PageCommon.vue'
+
 export default {
+  components: {
+    PageCommon
+  },
   head: function() {
     return {
       title: `${this.page.title}`,
@@ -25,3 +32,4 @@ export default {
   }
 };
 </script>
+
