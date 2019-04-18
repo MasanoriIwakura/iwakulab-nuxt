@@ -41,7 +41,7 @@ export default {
   data() {
     return {
       menu: [
-        { title: 'Profile', link: '/profile' },
+        { title: 'Profile', link: '/page/profile' },
         { title: 'Tech Blog', link: '/blog' },
         { title: 'Hobby Blog', link: '/hobby' },
         { title: 'Contact', link: '/contact' }

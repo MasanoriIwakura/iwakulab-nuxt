@@ -1,7 +1,7 @@
 module.exports = {
   api: function(isStatic) {
     const baseURL = "http://localhost:3000";
-    const browserBaseURL = !isStatic ? "" : process.env.BASE_URL;
+    const browserBaseURL = !isStatic ? baseURL : process.env.BASE_URL;
 
     return {
       baseURL,
@@ -10,20 +10,28 @@ module.exports = {
   },
   content: [
     [
-      "pages",
+      "page",
       {
-        page: "/page/_page",
-        permalink: "/:slug",
-        isPost: false
+        page: "_page",
+        permalink: "/page/:slug",
+        isPost: false,
+        generate: [
+          'get',
+          'getAll'
+        ]
       }
     ],
     [
       "blog",
       {
-        page: "/blog/_post",
+        page: "_post",
         permalink: "/blog/:year-:month-:day-:slug",
         isPost: true,
-        toc: 1
+        toc: 1,
+        generate: [
+          'get',
+          'getAll'
+        ]
       }
     ]
   ]
